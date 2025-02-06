@@ -1,0 +1,612 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #000000; 
+  color: #f1f1f1; 
+  margin: 0;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(67.5deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(156,108,22) 93%, rgb(156,108,22) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(90deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(156,108,22) 93%, rgb(156,108,22) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(135deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(156,108,22) 93%, rgb(156,108,22) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(0deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(156,108,22) 93%, rgb(156,108,22) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(90deg, rgb(8, 8, 8),rgb(221, 221, 221)); 
+  background-blend-mode:overlay,overlay,overlay,overlay,normal;
+    background-size: cover;
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+  }
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 10px 0;
+  z-index: 1000; 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(15px); 
+  -webkit-backdrop-filter: blur(15px); 
+
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+  
+}
+
+nav ul li a:hover {
+  color: #ff9800; 
+}
+
+nav ul li a.active {
+  color: #ff9800; 
+}
+
+header {
+  padding: 40px 20px;
+  text-align: center;
+  background-color:;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
+  height: 100vh; 
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #ff9800; 
+}
+
+header p {
+  font-size: 1.2em;
+  color:  rgb(177, 129, 56); 
+}
+
+section {
+  padding: 60px 20px;
+  margin: 20px 0;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center; 
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #ff9800; 
+  margin-bottom: 20px;
+}
+
+
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  font-size: 1.2em;
+  margin: 10px 0;
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+ul li:hover {
+  color: #ff9800; 
+  transform: scale(1.1); 
+}
+
+#about {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#about .about-container p {
+  margin-bottom: 20px; 
+  line-height: 1.6; 
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+  gap: 30px; 
+}
+
+.about-text {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.about-image {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 190px; 
+  height: auto;
+  border-radius: 10px;
+}
+.about-box {
+  width: 100%;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, 
+              transform 0.3s ease-in-out, 
+              box-shadow 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+.about-box:hover {
+  background-color: #131312;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+#skills {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: max-content; 
+  min-width: 1000px; 
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: transparent; 
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease
+}
+
+.skill-category {
+  margin-bottom: 40px;
+}
+
+.skill-box h3 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: rgb(177, 129, 56); 
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill {
+  border: 2px solid rgb(177, 129, 56); 
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #131312;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-box:hover {
+  background-color: #131312;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);;
+}
+
+#experience {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between experience boxes */
+}
+
+/* Individual Experience Box */
+.experience-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: max-content; /* Set width dynamically based on the largest content */
+  min-width: 1100px; /* Ensure all boxes have the same minimum size */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: transparent; /* No background by default */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Experience Boxes */
+.experience-box:hover {
+  background-color: #131312;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Experience Title (Job Name/Role) */
+.experience-title {
+  color: rgb(177, 129, 56);
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Experience Date */
+.experience-date {
+  font-size: 0.9em;
+  font-weight: normal;
+  color: #666;
+  margin: 1px 0;
+}
+
+/* Experience Description (Bullet Points) */
+.experience-description {
+  text-align: left; /* Left-align the description */
+  list-style-type: disc; /* Display bullet points */
+  padding-left: 20px; /* Add space between bullets and text */
+  color: white;
+  font-size: 0.9em;
+  line-height: 1;
+  margin-top: 5px;
+}
+
+.experience-description li {
+  color: white; /* Bullet points stay white */
+  transition: none; /* No transition effect on the list items */
+  pointer-events: none; /* Prevent the scaling effect from being triggered on the li items */
+}
+
+/* Ensure no hover effect on the list items */
+.experience-description li:hover {
+  color: white; /* Keep color the same when hovered */
+}
+
+/* Education Section */
+#education {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Container for Education Boxes */
+.education-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between education boxes */
+}
+
+/* Individual Education Box */
+.education-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%; /* Set width dynamically based on the largest content */
+  min-width: 1000px; /* Ensure all boxes have the same minimum size */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: transparent; /* No background by default */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect: ONLY Individual Education Boxes */
+.education-box:hover {
+  background-color: #131312;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Degree Title */
+.degree {
+  color: rgb(152, 121, 62);
+  font-size: 1.4em;
+  font-weight: bold;
+  white-space: nowrap; /* Prevents line breaks */
+}
+
+/* University Name */
+.university {
+  color: white;
+  font-size: 1.2em;
+  white-space: nowrap; /* Prevents line breaks */
+}
+
+/* Duration */
+.duration {
+  color: rgb(152, 121, 62);
+  font-size: 1em;
+  white-space: nowrap; /* Prevents line breaks */
+}
+
+.certification-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: max-content; /* Set width dynamically */
+  min-width: 1000px; /* Make sure the certification box is the same width as other boxes */
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Certification Box */
+.certification-box:hover {
+  background-color: #131312;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Certification Title */
+.certification-title {
+  color: orange;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.certifications {
+  display: grid; /* Change to grid for two-column layout */
+  grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
+  gap: 20px; /* Space between the certification link boxes */
+  width: 100%;
+  justify-items: center;
+}
+
+/* Certification Link Box (Inside Certification Box) */
+.certification-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 15px;
+  width: 100%; /* Ensure the link box takes up the full width of the column */
+  max-width: 350px; /* Limit max width for each certification link */
+  border: 1px solid #cfa663; /* Add border around each certificate */
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* Center the text horizontally */
+  min-height: px;
+}
+
+/* Hover Effect for Certification Link Box */
+.certification-link:hover {
+  background-color: rgb(177, 129, 56); /* Orange background */
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Certification Link Text */
+.certification-name {
+  color: white; /* Default text color is white */
+  font-size: 1em;
+  font-weight:;
+  text-decoration: none; /* Remove underline from text */
+  margin-bottom: 5px;
+  white-space: nowrap; /* Prevent the text from wrapping to the next line */
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.certification-link:hover .certification-name {
+  color: white; /* Ensure text stays white when hovering on the box */
+}
+
+#projects {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Container for Project Boxes */
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between project boxes */
+}
+
+/* Individual Project Box */
+.project-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: max-content; /* Set width dynamically based on the largest content */
+  min-width: 500px; /* Ensure all boxes have the same minimum size */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: transparent; /* No background by default */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+  background-color: #131312;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Name */
+.project-name {
+  color: rgb(152, 121, 62);
+  font-size: 1.6em;
+  font-weight: bold;
+  white-space: nowrap; 
+}
+
+/* Project Description */
+.project-box .project-description {
+  color: white;
+  font-size: 1.1em;
+  text-align: left;
+  margin-top: 10px;
+  line-height: 1.5;
+  max-width: 90%;
+  margin-bottom: 20px;
+  
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.project-content  * {
+  margin-bottom: 10px;
+}
+
+#contact {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#contact h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #ff9800; 
+}
+
+/* Contact Box */
+.contact-box {
+  background-color: transparent; 
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-box p {
+  color: white;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+/* Contact Links */
+.contact-links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-link {
+  color:rgb(152, 121, 62) ; 
+  text-decoration: none;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+.contact-box:hover {
+  background-color: #131312;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-link i {
+  font-size: 1.5em;
+}
+
+/* Hover Effect */
+.contact-link:hover  {
+  color: orange;
+}
+
+
+
+/* Footer styling */
+footer {
+  background-color: ; 
+  color: ;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 1.2em;
+}
+
+/* Responsive Design - for mobile devices */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1.1em;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
