@@ -11,20 +11,20 @@ html {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #000000; 
-  color: #f1f1f1; 
+  background-color: #000000;
+  color: #f1f1f1;
   margin: 0;
   padding-top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(67.5deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(156,108,22) 93%, rgb(156,108,22) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(90deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(156,108,22) 93%, rgb(156,108,22) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(135deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(156,108,22) 93%, rgb(156,108,22) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(0deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(156,108,22) 93%, rgb(156,108,22) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(90deg, rgb(8, 8, 8),rgb(221, 221, 221)); 
-  background-blend-mode:overlay,overlay,overlay,overlay,normal;
-    background-size: cover;
-    background-attachment: fixed; 
-    margin: 0;
-    padding: 0;
-  }
+  background-image: linear-gradient(67.5deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%, rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%, rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%, rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%, rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%, rgb(156, 108, 22) 93%, rgb(156, 108, 22) 95%, rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%), linear-gradient(90deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%, rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%, rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%, rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%, rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%, rgb(156, 108, 22) 93%, rgb(156, 108, 22) 95%, rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%), linear-gradient(135deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%, rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%, rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%, rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%, rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%, rgb(156, 108, 22) 93%, rgb(156, 108, 22) 95%, rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%), linear-gradient(0deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%, rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%, rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%, rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%, rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%, rgb(156, 108, 22) 93%, rgb(156, 108, 22) 95%, rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%), linear-gradient(90deg, rgb(8, 8, 8), rgb(221, 221, 221));
+  background-blend-mode: overlay, overlay, overlay, overlay, normal;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
 
 nav {
   position: fixed;
@@ -32,14 +32,38 @@ nav {
   left: 0;
   width: 100%;
   color: white;
-  padding: 10px 0;
-  z-index: 1000; 
+  padding: 10px 20px;
+  z-index: 1000;
   text-align: center;
   display: flex;
   justify-content: center;
-  backdrop-filter: blur(15px); 
-  -webkit-backdrop-filter: blur(15px); 
+  align-items: center;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
 
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle i {
+  font-size: 1.5em;
+  color: white;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
 }
 
 nav ul {
@@ -57,52 +81,77 @@ nav ul li a {
   text-decoration: none;
   font-size: 1em;
   transition: color 0.3s;
-  
+
 }
 
 nav ul li a:hover {
-  color: #ff9800; 
+  color: #ff9800;
 }
 
 nav ul li a.active {
-  color: #ff9800; 
+  color: #ff9800;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
 }
 
 header {
   padding: 40px 20px;
   text-align: center;
-  background-color:;
+  background-color: ;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  height: 100vh; 
+  height: 100vh;
 }
 
 header h1 {
   font-size: 3em;
   margin-bottom: 10px;
-  color: #ff9800; 
+  color: #ff9800;
 }
 
 header p {
   font-size: 1.2em;
-  color:  rgb(177, 129, 56); 
+  color: rgb(177, 129, 56);
 }
 
 section {
   padding: 60px 20px;
   margin: 20px 0;
-  text-align: center; 
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; 
-  align-items: center; 
+  justify-content: flex-start;
+  align-items: center;
 }
 
 h2 {
   font-size: 2.5em;
-  color: #ff9800; 
+  color: #ff9800;
   margin-bottom: 20px;
 }
 
@@ -115,12 +164,12 @@ ul {
 ul li {
   font-size: 1.2em;
   margin: 10px 0;
-  transition: transform 0.3s ease, color 0.3s ease; 
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 ul li:hover {
-  color: #ff9800; 
-  transform: scale(1.1); 
+  color: #ff9800;
+  transform: scale(1.1);
 }
 
 #about {
@@ -129,8 +178,8 @@ ul li:hover {
 }
 
 #about .about-container p {
-  margin-bottom: 20px; 
-  line-height: 1.6; 
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 .about-container {
@@ -139,7 +188,7 @@ ul li:hover {
   justify-content: center;
   max-width: 1000px;
   margin: auto;
-  gap: 30px; 
+  gap: 30px;
 }
 
 .about-text {
@@ -155,19 +204,20 @@ ul li:hover {
 }
 
 .about-image img {
-  max-width: 190px; 
+  max-width: 190px;
   height: auto;
   border-radius: 10px;
 }
+
 .about-box {
   width: 100%;
   background-color: transparent;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease-in-out, 
-              transform 0.3s ease-in-out, 
-              box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out,
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
   transform-origin: center;
 }
 
@@ -189,12 +239,12 @@ ul li:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: max-content; 
-  min-width: 1000px; 
+  width: max-content;
+  min-width: 1000px;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  background-color: transparent; 
+  background-color: transparent;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease
 }
@@ -206,7 +256,7 @@ ul li:hover {
 .skill-box h3 {
   font-size: 1.2em;
   margin-bottom: 20px;
-  color: rgb(177, 129, 56); 
+  color: rgb(177, 129, 56);
 }
 
 .skills-list {
@@ -217,7 +267,7 @@ ul li:hover {
 }
 
 .skill {
-  border: 2px solid rgb(177, 129, 56); 
+  border: 2px solid rgb(177, 129, 56);
   padding: 10px 15px;
   border-radius: 8px;
   font-size: 1em;
@@ -228,7 +278,8 @@ ul li:hover {
 .skill-box:hover {
   background-color: #131312;
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  ;
 }
 
 #experience {
@@ -241,7 +292,8 @@ ul li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* Space between experience boxes */
+  gap: 20px;
+  /* Space between experience boxes */
 }
 
 /* Individual Experience Box */
@@ -250,12 +302,15 @@ ul li:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: max-content; /* Set width dynamically based on the largest content */
-  min-width: 1100px; /* Ensure all boxes have the same minimum size */
+  width: max-content;
+  /* Set width dynamically based on the largest content */
+  min-width: 1100px;
+  /* Ensure all boxes have the same minimum size */
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  background-color: transparent; /* No background by default */
+  background-color: transparent;
+  /* No background by default */
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -285,9 +340,12 @@ ul li:hover {
 
 /* Experience Description (Bullet Points) */
 .experience-description {
-  text-align: left; /* Left-align the description */
-  list-style-type: disc; /* Display bullet points */
-  padding-left: 20px; /* Add space between bullets and text */
+  text-align: left;
+  /* Left-align the description */
+  list-style-type: disc;
+  /* Display bullet points */
+  padding-left: 20px;
+  /* Add space between bullets and text */
   color: white;
   font-size: 0.9em;
   line-height: 1;
@@ -295,14 +353,18 @@ ul li:hover {
 }
 
 .experience-description li {
-  color: white; /* Bullet points stay white */
-  transition: none; /* No transition effect on the list items */
-  pointer-events: none; /* Prevent the scaling effect from being triggered on the li items */
+  color: white;
+  /* Bullet points stay white */
+  transition: none;
+  /* No transition effect on the list items */
+  pointer-events: none;
+  /* Prevent the scaling effect from being triggered on the li items */
 }
 
 /* Ensure no hover effect on the list items */
 .experience-description li:hover {
-  color: white; /* Keep color the same when hovered */
+  color: white;
+  /* Keep color the same when hovered */
 }
 
 /* Education Section */
@@ -316,7 +378,8 @@ ul li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* Space between education boxes */
+  gap: 20px;
+  /* Space between education boxes */
 }
 
 /* Individual Education Box */
@@ -325,12 +388,15 @@ ul li:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%; /* Set width dynamically based on the largest content */
-  min-width: 1000px; /* Ensure all boxes have the same minimum size */
+  width: 80%;
+  /* Set width dynamically based on the largest content */
+  min-width: 1000px;
+  /* Ensure all boxes have the same minimum size */
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  background-color: transparent; /* No background by default */
+  background-color: transparent;
+  /* No background by default */
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -347,21 +413,24 @@ ul li:hover {
   color: rgb(152, 121, 62);
   font-size: 1.4em;
   font-weight: bold;
-  white-space: nowrap; /* Prevents line breaks */
+  white-space: nowrap;
+  /* Prevents line breaks */
 }
 
 /* University Name */
 .university {
   color: white;
   font-size: 1.2em;
-  white-space: nowrap; /* Prevents line breaks */
+  white-space: nowrap;
+  /* Prevents line breaks */
 }
 
 /* Duration */
 .duration {
   color: rgb(152, 121, 62);
   font-size: 1em;
-  white-space: nowrap; /* Prevents line breaks */
+  white-space: nowrap;
+  /* Prevents line breaks */
 }
 
 .certification-box {
@@ -369,8 +438,10 @@ ul li:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: max-content; /* Set width dynamically */
-  min-width: 1000px; /* Make sure the certification box is the same width as other boxes */
+  width: max-content;
+  /* Set width dynamically */
+  min-width: 1000px;
+  /* Make sure the certification box is the same width as other boxes */
   padding: 20px;
   margin-top: 20px;
   border-radius: 10px;
@@ -396,9 +467,12 @@ ul li:hover {
 }
 
 .certifications {
-  display: grid; /* Change to grid for two-column layout */
-  grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
-  gap: 20px; /* Space between the certification link boxes */
+  display: grid;
+  /* Change to grid for two-column layout */
+  grid-template-columns: repeat(2, 1fr);
+  /* Create two equal-width columns */
+  gap: 20px;
+  /* Space between the certification link boxes */
   width: 100%;
   justify-items: center;
 }
@@ -411,36 +485,46 @@ ul li:hover {
   justify-content: center;
   background-color: transparent;
   padding: 15px;
-  width: 100%; /* Ensure the link box takes up the full width of the column */
-  max-width: 350px; /* Limit max width for each certification link */
-  border: 1px solid #cfa663; /* Add border around each certificate */
+  width: 100%;
+  /* Ensure the link box takes up the full width of the column */
+  max-width: 350px;
+  /* Limit max width for each certification link */
+  border: 1px solid #cfa663;
+  /* Add border around each certificate */
   border-radius: 8px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-  text-align: center; /* Center the text horizontally */
+  text-align: center;
+  /* Center the text horizontally */
   min-height: px;
 }
 
 /* Hover Effect for Certification Link Box */
 .certification-link:hover {
-  background-color: rgb(177, 129, 56); /* Orange background */
+  background-color: rgb(177, 129, 56);
+  /* Orange background */
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Certification Link Text */
 .certification-name {
-  color: white; /* Default text color is white */
+  color: white;
+  /* Default text color is white */
   font-size: 1em;
-  font-weight:;
-  text-decoration: none; /* Remove underline from text */
+  font-weight: ;
+  text-decoration: none;
+  /* Remove underline from text */
   margin-bottom: 5px;
-  white-space: nowrap; /* Prevent the text from wrapping to the next line */
-  transition: color 0.3s ease; /* Smooth transition for text color */
+  white-space: nowrap;
+  /* Prevent the text from wrapping to the next line */
+  transition: color 0.3s ease;
+  /* Smooth transition for text color */
 }
 
 .certification-link:hover .certification-name {
-  color: white; /* Ensure text stays white when hovering on the box */
+  color: white;
+  /* Ensure text stays white when hovering on the box */
 }
 
 #projects {
@@ -453,7 +537,8 @@ ul li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* Space between project boxes */
+  gap: 20px;
+  /* Space between project boxes */
 }
 
 /* Individual Project Box */
@@ -462,12 +547,15 @@ ul li:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: max-content; /* Set width dynamically based on the largest content */
-  min-width: 500px; /* Ensure all boxes have the same minimum size */
+  width: max-content;
+  /* Set width dynamically based on the largest content */
+  min-width: 500px;
+  /* Ensure all boxes have the same minimum size */
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  background-color: transparent; /* No background by default */
+  background-color: transparent;
+  /* No background by default */
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -483,7 +571,7 @@ ul li:hover {
   color: rgb(152, 121, 62);
   font-size: 1.6em;
   font-weight: bold;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 /* Project Description */
@@ -495,7 +583,7 @@ ul li:hover {
   line-height: 1.5;
   max-width: 90%;
   margin-bottom: 20px;
-  
+
 }
 
 .project-content {
@@ -505,7 +593,7 @@ ul li:hover {
   width: 100%;
 }
 
-.project-content  * {
+.project-content * {
   margin-bottom: 10px;
 }
 
@@ -517,12 +605,12 @@ ul li:hover {
 #contact h2 {
   font-size: 2.5em;
   font-weight: bold;
-  color: #ff9800; 
+  color: #ff9800;
 }
 
 /* Contact Box */
 .contact-box {
-  background-color: transparent; 
+  background-color: transparent;
   padding: 20px;
   border-radius: 15px;
   max-width: 600px;
@@ -545,7 +633,7 @@ ul li:hover {
 }
 
 .contact-link {
-  color:rgb(152, 121, 62) ; 
+  color: rgb(152, 121, 62);
   text-decoration: none;
   font-size: 1em;
   display: flex;
@@ -553,6 +641,7 @@ ul li:hover {
   gap: 8px;
   transition: color 0.3s ease;
 }
+
 .contact-box:hover {
   background-color: #131312;
   transform: scale(1.05);
@@ -564,7 +653,7 @@ ul li:hover {
 }
 
 /* Hover Effect */
-.contact-link:hover  {
+.contact-link:hover {
   color: orange;
 }
 
@@ -572,7 +661,7 @@ ul li:hover {
 
 /* Footer styling */
 footer {
-  background-color: ; 
+  background-color: ;
   color: ;
   text-align: center;
   padding: 20px 0;
@@ -583,8 +672,32 @@ footer p {
   font-size: 1.2em;
 }
 
+/* Responsive Design - for tablets */
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text,
+  .about-image {
+    width: 100%;
+  }
+
+  .experience-box,
+  .skill-box,
+  .education-box,
+  .certification-box,
+  .project-box {
+    width: 90%;
+    min-width: auto;
+  }
+}
+
 /* Responsive Design - for mobile devices */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+
+  /* Adjust header text */
   header h1 {
     font-size: 2em;
   }
@@ -593,20 +706,60 @@ footer p {
     font-size: 1.1em;
   }
 
-  section {
-    padding: 40px 20px;
-  }
-
-  h2 {
-    font-size: 2em;
-  }
-
-  nav ul {
+  /* Stack sections properly */
+  .about-container,
+  .experience-container,
+  .project-container,
+  .education-container {
     flex-direction: column;
     align-items: center;
   }
 
-  nav ul li {
+  /* Adjust navigation */
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    text-align: center;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-list li {
     margin: 10px 0;
+  }
+
+  /* Adjust experience and project sections */
+  .experience-box,
+  .project-box,
+  .skill-box {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .education-box {
+    width: 50%;
+    padding: 10px;
+  }
+
+  /* Adjust certification grid for mobile */
+  .certifications {
+    grid-template-columns: 1fr;
+  }
+
+  /* Adjust contact links */
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
   }
 }
