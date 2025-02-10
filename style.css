@@ -1,3 +1,4 @@
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -92,35 +93,22 @@ nav ul li a.active {
   color: #ff9800;
 }
 
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-list {
-    display: none;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-list.active {
-    display: flex;
-  }
-
-  .nav-list li {
-    margin: 10px 0;
-  }
+.container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 1.5em 0;
 }
 
+.container-full {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+/* Header */
 header {
   padding: 40px 20px;
   text-align: center;
-  background-color: ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,7 +127,8 @@ header p {
   color: rgb(177, 129, 56);
 }
 
-section {
+/* Sections */
+.section {
   padding: 60px 20px;
   margin: 20px 0;
   text-align: center;
@@ -149,13 +138,11 @@ section {
   align-items: center;
 }
 
-h2 {
-  font-size: 2.5em;
+.section h2 {
+  font-size: 2.5rem;
   color: #ff9800;
   margin-bottom: 20px;
 }
-
-
 
 ul {
   list-style-type: none;
@@ -167,34 +154,31 @@ ul li {
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-ul li:hover {
-  color: #ff9800;
-  transform: scale(1.1);
-}
-
-#about {
-  text-align: center;
+/* About Section */
+.about {
   padding: 50px 20px;
+  margin-bottom: 20px;
+  line-height: 1.6em;
+  width: 50%;
+  border-radius: 10px;
+  text-align: justify;
+  transition: background-color 0.3s ease-in-out,
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  transform-origin: center;
 }
 
-#about .about-container p {
-  margin-bottom: 20px;
-  line-height: 1.6;
+.about:hover {
+  background-color: #131312;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .about-container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  max-width: 1000px;
-  margin: auto;
-  gap: 30px;
-}
-
-.about-text {
-  flex: 1;
-  padding: 20px;
-  text-align: left;
+  align-items: center;
+  gap: 50px;
 }
 
 .about-image {
@@ -209,513 +193,230 @@ ul li:hover {
   border-radius: 10px;
 }
 
-.about-box {
-  width: 100%;
-  background-color: transparent;
-  padding: 20px;
+/* Skills Section */
+.skill {
+  padding: 2em;
+  margin-bottom: 1.5em;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease-in-out,
-    transform 0.3s ease-in-out,
-    box-shadow 0.3s ease-in-out;
-  transform-origin: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about-box:hover {
-  background-color: #131312;
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-
-#skills {
-  text-align: center;
-  padding: 50px 20px;
-}
-
-
-.skill-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: max-content;
-  min-width: 1000px;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  background-color: transparent;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease
-}
-
-.skill-category {
-  margin-bottom: 40px;
-}
-
-.skill-box h3 {
+.skill h3 {
   font-size: 1.2em;
   margin-bottom: 20px;
   color: rgb(177, 129, 56);
+}
+
+.skill:hover {
+  background-color: #131312;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .skills-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  list-style-type: none;
 }
 
-.skill {
+.skills-list li {
+  margin: 0.5em;
+  padding: 0.5em 1em;
   border: 2px solid rgb(177, 129, 56);
-  padding: 10px 15px;
-  border-radius: 8px;
-  font-size: 1em;
-  background-color: #131312;
-  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  font-size: 1.1rem;
 }
 
-.skill-box:hover {
-  background-color: #131312;
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  ;
-}
-
-#experience {
-  text-align: center;
-  padding: 50px 20px;
-}
-
-
-.experience-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  /* Space between experience boxes */
-}
-
-/* Individual Experience Box */
-.experience-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: max-content;
-  /* Set width dynamically based on the largest content */
-  min-width: 1100px;
-  /* Ensure all boxes have the same minimum size */
-  padding: 20px;
+/* Experience Section */
+.experience {
+  padding: 2em;
+  margin-bottom: 1.5em;
   border-radius: 10px;
-  text-align: center;
-  background-color: transparent;
-  /* No background by default */
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover Effect for Experience Boxes */
-.experience-box:hover {
+.experience:hover {
   background-color: #131312;
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Experience Title (Job Name/Role) */
-.experience-title {
+.experience h3 {
   color: rgb(177, 129, 56);
-  font-size: 1.3em;
-  font-weight: bold;
-  margin-bottom: 5px;
+  font-size: 1.5rem;
 }
 
-/* Experience Date */
-.experience-date {
-  font-size: 0.9em;
-  font-weight: normal;
-  color: #666;
-  margin: 1px 0;
-}
-
-/* Experience Description (Bullet Points) */
-.experience-description {
-  text-align: left;
-  /* Left-align the description */
+.experience-list {
   list-style-type: disc;
-  /* Display bullet points */
-  padding-left: 20px;
-  /* Add space between bullets and text */
-  color: white;
-  font-size: 0.9em;
-  line-height: 1;
-  margin-top: 5px;
+  text-align: justify;
 }
 
-.experience-description li {
-  color: white;
-  /* Bullet points stay white */
-  transition: none;
-  /* No transition effect on the list items */
-  pointer-events: none;
-  /* Prevent the scaling effect from being triggered on the li items */
+.experience-list li {
+  margin-left: 2em;
 }
 
-/* Ensure no hover effect on the list items */
-.experience-description li:hover {
-  color: white;
-  /* Keep color the same when hovered */
+/* Project Section */
+.project {
+  padding: 2em;
+  margin-bottom: 1.5em;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  background-color: #131312;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  color: rgb(177, 129, 56);
+}
+
+.project p {
+  font-size: 1.1rem;
+  text-align: justify;
 }
 
 /* Education Section */
-#education {
-  text-align: center;
-  padding: 50px 20px;
-}
-
-/* Container for Education Boxes */
-.education-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  /* Space between education boxes */
-}
-
-/* Individual Education Box */
-.education-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-  /* Set width dynamically based on the largest content */
-  min-width: 1000px;
-  /* Ensure all boxes have the same minimum size */
-  padding: 20px;
+.education {
+  width: 75%;
+  margin: 0 auto;
+  padding: 2em;
+  margin-bottom: 1.5em;
   border-radius: 10px;
-  text-align: center;
-  background-color: transparent;
-  /* No background by default */
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover Effect: ONLY Individual Education Boxes */
-.education-box:hover {
+.education:hover {
   background-color: #131312;
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Degree Title */
-.degree {
-  color: rgb(152, 121, 62);
-  font-size: 1.4em;
-  font-weight: bold;
-  white-space: nowrap;
-  /* Prevents line breaks */
+.education h3 {
+  color: rgb(177, 129, 56);
+  font-size: 1.5rem;
 }
 
-/* University Name */
-.university {
-  color: white;
-  font-size: 1.2em;
-  white-space: nowrap;
-  /* Prevents line breaks */
-}
-
-/* Duration */
-.duration {
-  color: rgb(152, 121, 62);
-  font-size: 1em;
-  white-space: nowrap;
-  /* Prevents line breaks */
-}
-
-.certification-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: max-content;
-  /* Set width dynamically */
-  min-width: 1000px;
-  /* Make sure the certification box is the same width as other boxes */
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
-  background-color: transparent;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover Effect for Certification Box */
-.certification-box:hover {
-  background-color: #131312;
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Certification Title */
-.certification-title {
-  color: orange;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
+.education h4 {
+  font-size: 1rem;
 }
 
 .certifications {
-  display: grid;
-  /* Change to grid for two-column layout */
-  grid-template-columns: repeat(2, 1fr);
-  /* Create two equal-width columns */
-  gap: 20px;
-  /* Space between the certification link boxes */
-  width: 100%;
-  justify-items: center;
-}
-
-/* Certification Link Box (Inside Certification Box) */
-.certification-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  padding: 15px;
-  width: 100%;
-  /* Ensure the link box takes up the full width of the column */
-  max-width: 350px;
-  /* Limit max width for each certification link */
-  border: 1px solid #cfa663;
-  /* Add border around each certificate */
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  padding: 2em;
+  margin-bottom: 1.5em;
   border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
-  /* Center the text horizontally */
-  min-height: px;
 }
 
-/* Hover Effect for Certification Link Box */
-.certification-link:hover {
-  background-color: rgb(177, 129, 56);
-  /* Orange background */
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Certification Link Text */
-.certification-name {
-  color: white;
-  /* Default text color is white */
-  font-size: 1em;
-  font-weight: ;
-  text-decoration: none;
-  /* Remove underline from text */
-  margin-bottom: 5px;
-  white-space: nowrap;
-  /* Prevent the text from wrapping to the next line */
-  transition: color 0.3s ease;
-  /* Smooth transition for text color */
-}
-
-.certification-link:hover .certification-name {
-  color: white;
-  /* Ensure text stays white when hovering on the box */
-}
-
-#projects {
-  text-align: center;
-  padding: 50px 20px;
-}
-
-/* Container for Project Boxes */
-.project-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  /* Space between project boxes */
-}
-
-/* Individual Project Box */
-.project-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: max-content;
-  /* Set width dynamically based on the largest content */
-  min-width: 500px;
-  /* Ensure all boxes have the same minimum size */
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  background-color: transparent;
-  /* No background by default */
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-box:hover {
+.certifications:hover {
   background-color: #131312;
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Project Name */
-.project-name {
-  color: rgb(152, 121, 62);
-  font-size: 1.6em;
-  font-weight: bold;
-  white-space: nowrap;
+.certifications h3 {
+  color: rgb(177, 129, 56);
+  font-size: 1.2em;
 }
 
-/* Project Description */
-.project-box .project-description {
+.certifications-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  list-style-type: none;
+}
+
+.certifications a {
+  text-decoration: none;
   color: white;
-  font-size: 1.1em;
-  text-align: left;
-  margin-top: 10px;
-  line-height: 1.5;
-  max-width: 90%;
-  margin-bottom: 20px;
-
 }
 
-.project-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+.certifications-list li {
+  margin: 1em;
+  padding: 0.5em 1em;
+  border: 2px solid rgb(177, 129, 56);
+  border-radius: 5px;
+  margin-left: 2em;
 }
 
-.project-content * {
-  margin-bottom: 10px;
+.certifications-list li:hover {
+  color: #f4f4f9;
+  background-color: rgb(177, 129, 56);
 }
 
-#contact {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-#contact h2 {
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #ff9800;
-}
-
-/* Contact Box */
-.contact-box {
+/* Contact Section */
+#contact-style {
   background-color: transparent;
-  padding: 20px;
-  border-radius: 15px;
   max-width: 600px;
   margin: auto;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 1.5em;
+  border-radius: 15px;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-box p {
-  color: white;
-  font-size: 1.2em;
-  margin-bottom: 15px;
-}
-
-/* Contact Links */
-.contact-links {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.contact-link {
-  color: rgb(152, 121, 62);
-  text-decoration: none;
-  font-size: 1em;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: color 0.3s ease;
-}
-
-.contact-box:hover {
+#contact-style:hover {
   background-color: #131312;
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.contact-link i {
-  font-size: 1.5em;
+#contact a {
+  font-size: 1rem;
+  color: rgb(156, 108, 22);
+  text-decoration: none;
 }
 
-/* Hover Effect */
-.contact-link:hover {
+#contact a:hover {
   color: orange;
 }
 
+.contact-list {
+  font-size: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+}
 
-
-/* Footer styling */
+/* Footer */
 footer {
-  background-color: ;
-  color: ;
-  text-align: center;
+  background-color: transparent;
+  color: #ecf0f1;
+  text-align: justify;
   padding: 20px 0;
-  margin-top: 40px;
+  text-wrap: nowrap;
 }
 
 footer p {
-  font-size: 1.2em;
+  font-size: 1rem;
 }
 
-/* Responsive Design - for tablets */
-@media (max-width: 1024px) {
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-text,
-  .about-image {
-    width: 100%;
-  }
-
-  .experience-box,
-  .skill-box,
-  .education-box,
-  .certification-box,
-  .project-box {
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .container {
     width: 90%;
-    min-width: auto;
-  }
-}
-
-/* Responsive Design - for mobile devices */
-@media (max-width: 768px) {
-
-  /* Adjust header text */
-  header h1 {
-    font-size: 2em;
   }
 
-  header p {
-    font-size: 1.1em;
-  }
-
-  /* Stack sections properly */
-  .about-container,
-  .experience-container,
-  .project-container,
-  .education-container {
+  .about-container {
     flex-direction: column;
     align-items: center;
   }
 
-  /* Adjust navigation */
+  .about,
+  .about-image {
+    width: 100%;
+    text-align: justify;
+  }
+
   .menu-toggle {
     display: block;
   }
@@ -724,7 +425,7 @@ footer p {
     display: none;
     flex-direction: column;
     width: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     position: absolute;
     top: 50px;
     left: 0;
@@ -739,27 +440,23 @@ footer p {
     margin: 10px 0;
   }
 
-  /* Adjust experience and project sections */
-  .experience-box,
-  .project-box,
-  .skill-box {
-    width: 100%;
-    padding: 15px;
+  header h1 {
+    font-size: 2rem;
   }
 
-  .education-box {
-    width: 50%;
-    padding: 10px;
+  header .subtitle {
+    font-size: 1rem;
   }
 
-  /* Adjust certification grid for mobile */
-  .certifications {
-    grid-template-columns: 1fr;
+  .skills-list li,
+  .project,
+  .experience,
+  .about {
+    padding: 1em;
+    font-size: 0.9rem;
   }
 
-  /* Adjust contact links */
-  .contact-links {
-    flex-direction: column;
-    align-items: center;
+  .section h2 {
+    font-size: 1.5rem;
   }
 }

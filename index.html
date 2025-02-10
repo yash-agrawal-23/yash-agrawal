@@ -4,9 +4,10 @@
 <head>
     <title>Yash Agrawal | Portfolio</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta property="og:title" content="Yash Agrawal | Portfolio">
+    <meta property="og:description" content="Portfolio showcasing data projects, skills, and experiences">
     <meta property="og:image" content="assets/images/page.png">
     <meta property="og:url" content="https://yash-agrawal-23.github.io/">
     <meta property="og:type" content="website">
@@ -15,10 +16,10 @@
     <link rel="icon" href="assets/images/portfolio-folder.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
 </head>
 
 <body>
+
     <nav>
         <div class="menu-toggle" id="mobile-menu">
             <i class="fas fa-bars"></i>
@@ -27,279 +28,224 @@
             <li><a href="#header" id="home-link">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#experiences">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
+            <li><a href="#educations">Education</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <header id="header">
-        <h1>Yash Agrawal</h1>
-        <p>Business Analyst | Strategic Thinker | Solution Finder </p>
-
+        <div>
+            <h1>Yash Agrawal</h1>
+            <p class="subtitle">Business Analyst | Strategic Thinker | Solution Finder</p>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <div class="about-text">
-                <div class="about-box">
-                    <p>
-                        Understanding data is one thing, but using it to solve real-world business challenges is another
-                        - that’s where I come in. With a Master’s in Business Analytics from The University of Texas at
-                        Dallas and a Bachelor’s in Commerce & Finance from SRCC (University of Delhi), I specialize in
-                        data analytics, predictive modeling, and process automation.
-                    </p>
-                    <p>
-                        I’ve worked across industries like retail, manufacturing, energy, and tech, streamlining
-                        operations and building solutions that drive growth. I thrive on solving complex problems,
-                        quickly adapting to new challenges and delivering actionable results. Let’s connect and explore
-                        how data can drive better business outcomes.
-                    </p>
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-container">
+                    <div class="about">
+                        <p>Understanding data is one thing, but using it to solve real-world business challenges is
+                            another
+                            - that’s where I come in. With a Master’s in Business Analytics from The University of Texas
+                            at
+                            Dallas and a Bachelor’s in Commerce & Finance from SRCC (University of Delhi), I specialize
+                            in
+                            data analytics, predictive modeling, and process automation.</p>
+                        <p>I’ve worked across industries like retail, manufacturing, energy, and tech, streamlining
+                            operations and building solutions that drive growth. I thrive on solving complex problems,
+                            quickly adapting to new challenges and delivering actionable results. Let’s connect and
+                            explore
+                            how data can drive better business outcomes.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="assets/images/myimg.jpg" alt="Your Photo">
+                    </div>
                 </div>
             </div>
-            <div class="about-image">
-                <img src="assets/images/myimg.jpg" alt="Your Photo">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-
-        <div class="skill-category">
-            <div class="skill-box">
-                <h3>Analysis & Visualization Tools</h3>
-                <div class="skills-list">
-                    <span class="skill">SQL</span>
-                    <span class="skill">R</span>
-                    <span class="skill">Python</span>
-                    <span class="skill">MS-Excel</span>
-                    <span class="skill">Power BI</span>
-                    <span class="skill">Tableau</span>
-                    <span class="skill">Looker Studio</span>
-                    <span class="skill">Alteryx</span>
+        <section id="skills" class="section">
+            <div class="container-full">
+                <h2>Skills</h2>
+                <div class="skill">
+                    <h3>Analysis & Visualization Tools</h3>
+                    <ul class="skills-list">
+                        <li>SQL</li>
+                        <li>R</li>
+                        <li>Python</li>
+                        <li>MS-Excel</li>
+                        <li>Power BI</li>
+                        <li>Tableau</li>
+                        <li>Looker Studio</li>
+                        <li>Alteryx</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Big Data & Other Tools</h3>
+                    <ul class="skills-list">
+                        <li>Google BigQuery</li>
+                        <li>Microsoft Azure</li>
+                        <li>Snowflake</li>
+                        <li>MS Power Automate</li>
+                        <li>SmartSheets</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Soft Skills</h3>
+                    <ul class="skills-list">
+                        <li>Problem Solving</li>
+                        <li>Communication</li>
+                        <li>Project Management</li>
+                        <li>Team Collaboration</li>
+                        <li>Adaptability</li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="skill-category">
-            <div class="skill-box">
-                <h3>Big Data & Other tools</h3>
-                <div class="skills-list">
-                    <span class="skill">Google BigQuery</span>
-                    <span class="skill">Microsoft Azure</span>
-                    <span class="skill">Snowflake</span>
-                    <span class="skill">MS Power Automate</span>
-                    <span class="skill">SmartSheets</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="skill-category">
-            <div class="skill-box">
-                <h3>Soft Skills</h3>
-                <div class="skills-list">
-                    <span class="skill">Problem Solving</span>
-                    <span class="skill">Communication</span>
-                    <span class="skill">Project Management</span>
-                    <span class="skill">Team Collaboration</span>
-                    <span class="skill">Adaptability</span>
-                </div>
-            </div>
-        </div>
-
-
-
-    </section>
-
-
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience-container">
-            <div class="experience-box">
-                <div class="experience-content">
-                    <h3 class="experience-title">Sales & Marketing Analyst Intern - NEPA Wholesale </h3>
-                    <p class="experience-date">Dec 2024 - Jan 2025</p>
-                    <ul class="experience-description"
-                        style="word-wrap: break-word; word-break: break-word; white-space: normal; max-width: 1000px;">
+        <section id="experiences" class="section">
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="experience">
+                    <h3>Sales & Marketing Analyst Intern - NEPA Wholesale</h3>
+                    <h4>Dec, 2024 - Jan, 2025</h4>
+                    <ul class="experience-list">
                         <li>Analyzed customer purchasing behavior and lifetime value (CLV) to guide strategic pricing
                             and promotional decisions</li>
                         <li>Continuously leveraged ODOO CRM to monitor and optimize the sales funnel, addressing
                             conversion bottlenecks in real time and driving
                             improvements in sales efficiency.</li>
                         <li>Actively utilized data-driven insights to refine pricing strategies and enhance wholesale
-                            distribution
-                            effectiveness, contributing to sustained revenue growth</li>
+                            distribution effectiveness, contributing to sustained revenue growth</li>
                     </ul>
                 </div>
-            </div>
-            <div class="experience-box">
-                <div class="experience-content">
-                    <h3 class="experience-title">Program Data Analyst Intern - Schneider Electric </h3>
-                    <p class="experience-date">Mar 2024 - May 2024</p>
-                    <ul class="experience-description"
-                        style="word-wrap: break-word; word-break: break-word; white-space: normal; max-width: 1000px;">
+                <div class="experience">
+                    <h3>Program Data Analyst Intern - Schneider Electric</h3>
+                    <h4>Mar, 2024 - May, 2024</h4>
+                    <ul class="experience-list">
                         <li>Created interactive Tableau dashboards to monitor key performance indicators (KPIs) related
-                            to product deliveries, such as
-                            overcommitments and late deliveries. These dashboards provided real-time insights, enabling
-                            teams to proactively address potential issues
-                            and resulting in a 20% reduction in late deliveries.
-                        </li>
+                            to product deliveries, such as overcommitments and late deliveries. These dashboards
+                            provided real-time insights, enabling teams to proactively address potential issues and
+                            resulting in a 20% reduction in late deliveries.</li>
                         <li>Automated data workflows between multiple systems (ERP, Smartsheet, and databases) using
-                            Python and SQL, cutting manual processing time
-                            by 50% and ensuring accurate, real-time reporting for cross-functional teams.</li>
+                            Python and SQL, cutting manual processing time by 50% and ensuring accurate, real-time
+                            reporting for cross-functional teams.</li>
                         <li>Enhanced Smartsheet document management by implementing a hierarchical structure and using
-                            REST APIs to automate data updates. This
-                            reduced the time spent locating key data by 40% and improved the efficiency of cross-team
-                            reporting</li>
+                            REST APIs to automate data updates. This reduced the time spent locating key data by 40% and
+                            improved the efficiency of cross-team reporting</li>
                     </ul>
                 </div>
-            </div>
-
-            <div class="experience-box">
-                <div class="experience-content">
-                    <h3 class="experience-title">Business Analyst - Senseloaf Technologies </h3>
-                    <p class="experience-date">Oct 2019 - June 2021</p>
-                    <ul class="experience-description"
-                        style="word-wrap: break-word; word-break: break-word; white-space: normal; max-width: 1000px;">
+                <div class="experience">
+                    <h3>Business Analyst - Senseloaf Technologies</h3>
+                    <h4>Oct, 2019 - Jun, 2021</h4>
+                    <ul class="experience-list">
                         <li>Conducted A/B testing on platform features to assess their financial impact, leading to a
-                            15% reduction in operational costs and optimizing
-                            resource allocation, ultimately improving both efficiency and profitability.</li>
+                            15% reduction in operational costs and optimizing resource allocation, ultimately improving
+                            both efficiency and profitability.</li>
                         <li>Developed and optimized predictive models for lead scoring using Python and SQL, achieving a
-                            20% increase in lead qualification accuracy and
-                            enhancing the sales team’s focus on high-value prospects.</li>
+                            20% increase in lead qualification accuracy and enhancing the sales team’s focus on
+                            high-value prospects.</li>
                         <li>Executed customer segmentation using clustering algorithms,which provided insights into
-                            distinct customer groups and allowed for targeted
-                            marketing, resulting in a 15% increase in lead-to-conversion rate</li>
+                            distinct customer groups and allowed for targeted marketing, resulting in a 15% increase in
+                            lead-to-conversion rate</li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project-box">
-                <div class="project-content">
-                    <h3 class="project-name">Order Management Project</h3>
-                    <p class="project-description"
-                        style="word-wrap: break-word; word-break: break-word; white-space: normal; max-width: 1000px;">
-                        Created views and indexes using BigQuery on a synthetic dataset to streamline the analysis of
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Order Management Project</h3>
+                    <p>Created views and indexes using BigQuery on a synthetic dataset to streamline the analysis of
                         complex order management data. Designed interactive dashboards in Looker Studio to uncover
                         purchase trends, improving insights into supply chain logistics and customer behavior, resulting
-                        in a 25% increase in forecasting accuracy.
-                    </p>
+                        in a 25% increase in forecasting accuracy.</p>
                 </div>
-            </div>
-
-            <div class="project-box">
-                <div class="project-content">
-                    <h3 class="project-name"> Time SeriesAnalysis on Stock Market Data</h3>
-                    <p class="project-description"
-                        style="word-wrap: break-word; word-break: break-word; white-space: normal; max-width: 1000px;">
-                        Leveraged advanced ARIMA modeling techniques to analyze 12 years of DJIA stock prices, creating
+                <div class="project">
+                    <h3>Time Series Analysis on Stock Market Data</h3>
+                    <p>Leveraged advanced ARIMA modeling techniques to analyze 12 years of DJIA stock prices, creating
                         predictive models with a strong sigma square value of 44.43. These forecasts delivered
-                        actionable insights, enabling more informed decision-making in stock trend analysis.
-                    </p>
+                        actionable insights, enabling more informed decision-making in stock trend analysis.</p>
                 </div>
-            </div>
-
-            <div class="project-box">
-                <div class="project-content">
-                    <h3 class="project-name">Airbnb Rental Analysis in Barcelona</h3>
-                    <p class="project-description"
-                        style="word-wrap: break-word; word-break: break-word; white-space: normal; max-width: 1000px;">
-                        Predictive Analysis on AirbnbDataset using Linear Regression, Random Forest and XGBoost as data
+                <div class="project">
+                    <h3>Airbnb
+                        Rentals Analysis in Barcelona</h3>
+                    <p>Predictive Analysis on AirbnbDataset using Linear Regression, Random Forest and XGBoost as data
                         models to analyze the dependency of property rentals on various factors to help new and existing
-                        hosts to competitively price their properties.
-                    </p>
+                        hosts to competitively price their properties.</p>
                 </div>
             </div>
+        </section>
 
-
-        </div>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <div class="section-box">
-            <div class="education-container">
-                <div class="education-box">
-                    <h3 class="degree">Master of Science in Business Analytics</h3>
-                    <p class="university">The University of Texas, Dallas - USA</p>
-                    <p class="duration">Aug 2022 - May 2024</p>
+        <section id="educations" class="section">
+            <div class="container-full">
+                <h2>Education</h2>
+                <div class="education">
+                    <h3>Master of Science in Business Analytics</h3>
+                    <h4>The University of Texas - Dallas, USA<br>August, 2022 - May, 2024</h4>
                 </div>
-
-                <div class="education-box">
-                    <h3 class="degree">Graduate Certificate, Business Intelligence and Data Mining</h3>
-                    <p class="university">The University of Texas, Dallas - USA</p>
-                    <p class="duration">Jan 2024 - May 2024</p>
+                <div class="education">
+                    <h3>Graduate Certificate in Business Intelligence and Data Mining</h3>
+                    <h4>The University of Texas - Dallas, USA<br>January, 2024 - May, 2024</h4>
                 </div>
-
-
-                <div class="education-box">
-                    <h3 class="degree">Bachelors in Commerce & Finance (Honors)</h3>
-                    <p class="university">SRCC (University of Delhi), India</p>
-                    <p class="duration">July 2014 - May 2017</p>
+                <div class="education">
+                    <h3>Bachelors in Commerce & Finance (Honors)</h3>
+                    <h4>SRCC (University of Delhi), India<br>July, 2014 - May, 2017</h4>
                 </div>
-
-                <div class="certification-box">
-                    <h3 class="certification-title">Certifications</h3>
-                    <div class="certifications">
-
-                        <div class="certification-link">
-                            <a href="https://learn.microsoft.com/en-us/users/agrawalyash-2207/credentials/4fc0655dd3c06aea?ref=https%3A%2F%2Fwww.linkedin.com%2F"
-                                target="_blank" class="certification-name">Microsoft Azure AI Fundamentals</a>
-                        </div>
-
-
-                        <div class="certification-link">
-                            <a href="https://skillshop.credential.net/b9f776ec-9813-47b7-9229-9154f2962855#acc.0wXSKRUV"
-                                target="_blank" class="certification-name">Google Analytics</a>
-                        </div>
-
-
-                        <div class="certification-link">
-                            <a href="" target="_blank" class="certification-name">Power BI Fundamentals</a>
-                        </div>
-
-
-                        <div class="certification-link">
-                            <a href="" target="_blank" class="certification-name">Data Analytics</a>
-                        </div>
-                    </div>
+                <div class="certifications">
+                    <h3>Certifications</h3>
+                    <ul class="certifications-list">
+                        <a href="https://learn.microsoft.com/en-us/users/agrawalyash-2207/credentials/4fc0655dd3c06aea?ref=https%3A%2F%2Fwww.linkedin.com%2F"
+                            target="_blank">
+                            <li>Microsoft Azure AI Fundamentals</li>
+                        </a>
+                        <a href="https://skillshop.credential.net/b9f776ec-9813-47b7-9229-9154f2962855#acc.0wXSKRUV"
+                            target="_blank">
+                            <li>Google Analytics</li>
+                        </a>
+                        <a href="" target="_blank">
+                            <li>Power BI Fundamentals</li>
+                        </a>
+                        <a href="" target="_blank">
+                            <li>Data Analytics</li>
+                        </a>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-box">
-            <p>I'm always open to new opportunities. Feel free to reach out!</p>
-            <div class="contact-links">
-                <a href="mailto:your-agrawalyash731@gmail.com" class="contact-link">
-                    <i class="fas fa-envelope"></i> Email
-                </a>
-                <a href="https://www.linkedin.com/in/yash-agrawal23/" target="_blank" class="contact-link">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://github.com/yash-agrawal-23" target="_blank" class="contact-link">
-                    <i class="fab fa-github"></i> Github
-                </a>
-                <a href="https://drive.google.com/file/d/12xut8O2a3mtBN_ox-uLJerFfMX8KW6rm/view" target="_blank"
-                    class="contact-link">
-                    <i class="fas fa-file-alt"></i> Resume
-                </a>
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <div id="contact-style" class="container">
+                <p>I'm always open to new opportunities. Feel free to reach out!</p>
+                <ul class="contact-list">
+                    <li><a href="mailto:agrawalyash731@gmail.com" target="_blank" class="fa fa-envelope"> Email</a></li>
+                    <li><a href="https://www.linkedin.com/in/yash-agrawal23/" target="_blank" class="fab fa-linkedin">
+                            LinkedIn</a></li>
+                    <li><a href="https://github.com/yash-agrawal-23" target="_blank" class="fab fa-github">
+                            GitHub</a></li>
+                    <li><a href="https://drive.google.com/file/d/12xut8O2a3mtBN_ox-uLJerFfMX8KW6rm/view" target="_blank"
+                            class="fa fa-file-alt">
+                            Resume</a></li>
+                </ul>
             </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>&copy; 2025 Yash Agrawal. All Rights Reserved.</p>
         </div>
-    </section>
+    </footer>
+
     <script src="script.js"></script>
+
 </body>
 
 </html>
