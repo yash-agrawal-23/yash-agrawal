@@ -270,9 +270,10 @@ ul li {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.project h3 {
-  font-size: 1.5rem;
-  color: rgb(177, 129, 56);
+.project h3 a {
+  color: rgb(177, 129, 56); /* Keep the original color */
+  text-decoration: none;
+  font-size: 1.3rem; /* Remove underline */
 }
 
 .project p {
